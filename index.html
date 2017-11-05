@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Erin Murphy Personal Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Courier new, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  h1 {
+    color: white; 
+    font: 45px Courier, Sans-Serif; 
+    letter-spacing: -1px;  
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+  }
+  div.outline a:hover
+  {
+    text-decoration-line: none;
+    border: 1px solid #555555;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  .margin {margin-bottom: 45px;}
+  .row-2 {
+    padding-top: 100px;
+    width: 100%;
+  }
+  .bg-1 { 
+      /*background-color: #474e5d; /* Dark Blue */
+      /* The image used */
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+    height: 100%;
+    min-height: 400px !important;
+    /* Center and scale the image nicely */
+    background-position: 50%70%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    font-size: 96px;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 30px;
+      padding-bottom: 30px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #474e5d !important;
+  }
+  /* Top and Bottom borders go out */
+div.topBotomBordersOut a:before, div.topBotomBordersOut a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #474e5d;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+div.topBotomBordersOut a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+div.topBotomBordersOut a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+div.topBotomBordersOut a:hover:before, div.topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><font size="4"><b>Erin Murphy</b></font></a>
+    </div>
+    <div class="collapse navbar-collapse topBotomBordersOut" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><font size="2">About Me</font></a></li>
+        <li><a href="#"><font size="2">Experience</font></a></li>
+        <li><a href="#"><font size="2">Interests</font></a></li>
+        <li><a href="#"><font size="2">Contact</font></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <div class= "row-2">
+    <div class="col-sm-4"><h1>Creator</h1></div>
+    <div class= "col-sm-4"><h1>Explorer</h1></div>
+    <div class= "col-sm-4"><h1>Developer</h1></div>
+  </div>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center outline">    
+  <a href=""><font size="5" color="#555555">Find out more about me!</font></a><br>
+  <div class="row" style="padding-top:50px">
+    <div class="col-sm-4">
+      <p>In my free time, I love to make things, usually in the art realm. While I am not trained or a professional, it's something I've loved to do since I was a kid.</p>
+      <img src="https://kathyfergusonart.com/wp-content/uploads/2016/05/art-artist-brush-paint-pencil-Favim.com-126570.jpg" class="img-responsive margin" style="width:100%; border-radius:8px" alt="{Image}">
+    </div>
+    <div class="col-sm-4"> 
+      <p>Despite how cliche is sounds, I absolutely love traveling and experiencing new cultures. Only ask about my study abroad if you're prepared for me to gush about it endlessly.</p>
+      <img src="http://www.kalekantoia.com/wp-content/uploads/2015/07/19072015blog01.jpg" class="img-responsive margin" style="width:100%; border-radius:8px" alt="{Image}">
+    </div>
+    <div class="col-sm-4"> 
+      <p>When it comes to technology, I'm all about building clean, smart, and responsive interfaces. Ideally, I would love to work developing efficient software full-stack.</p>
+      <img src="https://cdn.pixabay.com/photo/2015/09/05/20/02/coding-924920_960_720.jpg" class="img-responsive margin" style="width:100%; border-radius:8px" alt="{Image}">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>Boston University | Computer Engineering | Class of 2018</p> 
+</footer>
+
+</body>
+</html>
